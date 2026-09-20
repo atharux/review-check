@@ -1,5 +1,7 @@
 # Review Check
 
+![Review Check demo — answer context questions, screenshots get typed automatically, and findings rank by severity with unconfirmed ones shown honestly at reduced weight](docs/demo.gif)
+
 An open-source starter for the engine behind a pre-submission App Store
 audit tool: screenshots get typed by keyword, a handful of yes/no context
 questions gate which rules apply, and every finding is ranked by severity
