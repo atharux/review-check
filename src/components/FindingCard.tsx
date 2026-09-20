@@ -8,7 +8,7 @@ interface FindingCardProps {
 }
 
 /** One ranked finding. Unconfirmed findings stay visible, down-weighted and
- * labeled — an unanswered context question never silently hides a rule. */
+ * labeled. An unanswered context question never silently hides a rule. */
 export function FindingCard({ rule, confirmed, gateQuestion }: FindingCardProps) {
   const [open, setOpen] = useState(false);
   return (
@@ -34,7 +34,7 @@ export function FindingCard({ rule, confirmed, gateQuestion }: FindingCardProps)
           {!confirmed && gateQuestion && (
             <div className="gap-note">
               <b>Why this is unconfirmed:</b> &ldquo;{gateQuestion}&rdquo; wasn&rsquo;t answered.
-              The finding still appears — at reduced weight — instead of disappearing.
+              The finding still appears, at reduced weight, instead of disappearing.
             </div>
           )}
         </div>

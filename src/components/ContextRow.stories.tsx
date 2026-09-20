@@ -16,7 +16,7 @@ function Interactive({ initial }: { initial: ContextAnswer }) {
   const [answer, setAnswer] = useState<ContextAnswer>(initial);
   return (
     <ContextRow
-      question="Does the app sell anything — purchases, subscriptions, or unlocks?"
+      question="Does the app sell anything: purchases, subscriptions, or unlocks?"
       answer={answer}
       onAnswer={setAnswer}
     />

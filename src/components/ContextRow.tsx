@@ -6,8 +6,8 @@ interface ContextRowProps {
   onAnswer: (answer: ContextAnswer) => void;
 }
 
-/** One yes/no context question. Leaving it unanswered is a valid, honest state —
- * it doesn't force a guess, it just down-weights and labels whatever depends on it. */
+/** One yes/no context question. Leaving it unanswered is a valid state: it
+ * doesn't force a guess, it down-weights and labels whatever depends on it. */
 export function ContextRow({ question, answer, onAnswer }: ContextRowProps) {
   return (
     <div className="context-row">
